@@ -1,21 +1,27 @@
 //*****************conversion*************** */
-let score ='90i';
+let score =undefined;
 let age=20;
 //console.log(score);
 //console.log(typeof (score));
 
 var typeChange=Number(score)
-//console.log(typeChange);
-//console.log(typeof (typeChange));
+console.log(typeChange);
+console.log(typeof (typeChange));
 
 // var typeChange1=String(age);
 // console.log(typeChange1);
-// console.log(typeof (typeChange1));
+// console.log(typeof (typeChange1));  
+/**
+ * conversion to string 
+ * null==> null
+ */
 /*
 ->Conversion to number<-
 '33' ==> 33
+null ==> 0
 '33kl' ==> Nan (But still datatype is number)
 false  ==> Return value is 0 and incase of true return 1
+undefined ==> nan
 */
 
 let isLoggedIn ="sam";
@@ -58,11 +64,11 @@ console.log(+true);// result 1
 console.log(+""); // return 0
 // above practices are not recomanded
 
-let ab = 5;
-let bd = ++ab; // Increment a first, then assign its value to b
-console.log(ab); // 6 (a is incremented)
-console.log(bd); // 6 (b gets the incremented value)
-let x = 5;
-let y = x++; // Assign x's value to y first, then increment x
-console.log(x); // 6 (x is incremented)
-console.log(y); // 5 (y gets the original value of x)
+// let ab = 5;
+// let bd = ++ab; // Increment a first, then assign its value to b
+// console.log(ab); // 6 (a is incremented)
+// console.log(bd); // 6 (b gets the incremented value)
+// let x = 5;
+// let y = x++; // Assign x's value to y first, then increment x
+// console.log(x); // 6 (x is incremented)
+// console.log(y); // 5 (y gets the original value of x)
