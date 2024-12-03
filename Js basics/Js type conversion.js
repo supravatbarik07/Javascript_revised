@@ -65,7 +65,7 @@ console.log(+""); // return 0
 // above practices are not recomanded
 
 // let ab = 5;
-// let bd = ++ab; // Increment a first, then assign its value to b
+// let bd = ++ab; // Increment ab first, then assign its value to b
 // console.log(ab); // 6 (a is incremented)
 // console.log(bd); // 6 (b gets the incremented value)
 // let x = 5;
