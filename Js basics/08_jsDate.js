@@ -19,6 +19,7 @@ const myDate4= new Date('01-23-2024') // mm-dd-yyyy also available
 //console.log(myDate3.toLocaleString()); // 1/23/2024, 12:00:00 AM
 
 
+
 const myDate5=Date.now();//give current date and time in milliseconds
 
 //console.log(myDate5);
@@ -28,6 +29,8 @@ const myDate5=Date.now();//give current date and time in milliseconds
 //console.log(Math.floor(Date.now()/1000)); // Give time and dt in seconds 
 
 const myDate6 = new Date();  // Create a Date object with the current date and time
+
+
 
 const weekday = myDate6.toLocaleString('default', {
     weekday: 'long'   // Get the full name of the day (e.g., "Monday")
