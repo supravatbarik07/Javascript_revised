@@ -28,13 +28,13 @@ const meme1=meme.flat(4) //Here argument pass as upto how many depth array inclu
 
 //console.log(...layer1,...meme); // it is combine only 1 depth 
 
-//console.log(layer1.concat(meme)) //It can't concat
+//console.log(layer1.concat(meme)) //It can't concat the depth arrays
 
 //Converting any data into Array
 
-console.log(Array.isArray('Bitcoin'))//false
+// console.log(Array.isArray('Bitcoin'))//false
 
-console.log(Array.from('doge')) // [ 'd', 'o', 'g', 'e' ] it create the string in to array
+// console.log(Array.from('doge')) // [ 'd', 'o', 'g', 'e' ] it create the string in to array
 
 console.log(Array.from({name:'sol'}))//[]
 /**this is not a valid iterable or array-like object, the Array.from() method will behave in the following way:
@@ -42,11 +42,11 @@ It will treat the object as an empty iterable, meaning that Array.from() won't b
 The resulting array will be an empty array ([]), because the object does not have numeric indices or a length property that Array.from() can use. */
 
 //correct way->
-console.log(Object.keys({name:'pol'})) //[ 'name' ]
+//console.log(Object.keys({name:'pol'})) //[ 'name' ]
 /** here we define the which element of object we want to create an array key or value */
 
 const coin1='Ada'
 const coin2='sui'
 const coin3='aptos'
 
-console.log(Array.of(coin1,coin2,coin3)); // it create 3 variable to an array
+//console.log(Array.of(coin1,coin2,coin3)); // it create 3 variable to an array
