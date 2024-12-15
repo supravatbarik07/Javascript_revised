@@ -15,7 +15,9 @@ const user={
 }
 /*Objects are created using key value pairs'key:value'.
 In Js object keys  by default data types is String.
-Here if we use Symbol data type based key, then first need to define the symbol key outside of the the object.
+Here if  use Symbol data type based key, then first need to define the symbol key outside of the the object.
+otherwise it gives run time error.
+
 'Department name' -> this is most use when u are using combination of words for key.
 */
 //ways of accessing object
@@ -42,4 +44,4 @@ user.fullName=function(){
 
     console.log(user.fullName());
     
-    console.log(user)
+    //console.log(user)
