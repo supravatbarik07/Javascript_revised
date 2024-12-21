@@ -2,11 +2,11 @@
 
 const myDate=new Date();
 
-// console.log(myDate.getDate());
-// console.log(myDate.toDateString());
+console.log(myDate.getDate());
+console.log(myDate.toDateString());
 // console.log(typeof myDate);
 
-
+console.log(myDate.toISOString());
 const myDate1=new Date(2024,0,0) // in date  month numbers starts from 0
 
 //console.log(myDate1.toLocaleString());//Sat Jan 06 2024
