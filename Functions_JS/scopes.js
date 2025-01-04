@@ -7,7 +7,7 @@ const a=10;
 let b=20;
 var c=30;
 if(true){
-    console.log(a, b,c); //here a,b,c declared as the global scope  //10 20 30
+    //console.log(a, b,c); //here a,b,c declared as the global scope  //10 20 30
 }
 
 //Local scope:- If You declare variable inside the function the variable scope will be local couldn't use as global variable
@@ -18,7 +18,7 @@ if(1>0){
     const z=4//y cann't use as global variable bcz const keyword is bloack scopped
 }
 //console.log(x,z) //throughing error except var keyword
-console.log(y)// no error
+//console.log(y)// no error
 
 const p=201
 let q=306
@@ -29,6 +29,22 @@ if(6!=5){
     let q=305
     var r=37
 }
-console.log(p)//return only global scope value  201
-console.log(q)//return only global scope value  306
-console.log(r)//value will be replaced by local scope value.  37
+// console.log(p)//return only global scope value  201
+// console.log(q)//return only global scope value  306
+// console.log(r)//value will be replaced by local scope value.  37
+
+//video 22
+
+//Here We can access 
+addone(4);
+function addone(num){
+    return num+1;
+}
+
+addtwo(6);// this is throughing error because we are storing function into a variable,
+// so we can't access addtwo before initialization
+const addtwo=function addtwo(num){
+    return num+2;
+}
+
+
