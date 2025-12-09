@@ -18,10 +18,34 @@
                     <span>Password</span><br>
                     <input type="password" id="password" placeholder="Enter your password"><br>
                     <button type="submit" id="loginBtn">Login</button>
+                    <input type="reset" id="resetBtn" value="Reset">
                 </form>
                 <span>Enter any Email and password for Login</span>
                 <p id="error"></p>
             </div>
+        </div>
+    </div>
+    <!-- Feed Page -->
+    <div id="feedPage" class="page">
+        <nav class="navbar">
+            <div class="navbar-left">
+                <h2 class="navbar-brand">BuddyChat</h2>
+            </div>
+            <div class="navbar-right">
+                <button id="profileBtn" class="nav-btn">Profile</button>
+                <button id="logoutBtn" class="nav-btn logout-btn">Logout</button>
+            </div>
+        </nav>
+
+        <div class="feed-container">
+            <div class="search-box">
+                <h1>Feed</h1>
+                <div class="search-group">
+                    <input type="number" id="userId" placeholder="Search user posts (enter user ID)">
+                    <button id="getUserData" class="btn-primary">Search</button>
+                </div>
+            </div>
+            <div id="results" class="results-feed"></div>
         </div>
     </div>
     <script src="script.js"></script>
