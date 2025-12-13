@@ -1,5 +1,5 @@
 const errorMsg=document.getElementById('error');
-
+const welcomemsg=document.getElementById('welcomemsg');
 //dashboard display all posts
 function showPage(pageId){
     document.querySelectorAll('.page').forEach(page =>
@@ -28,6 +28,7 @@ function logInUser() {
         // errorMsg.textContent=`Login Successful! Welcome User ${data.name} (ID: ${data.id})`;
         showPage('feedPage');
         displayAllPosts();
+        welcomemsg.innerHTML=`<p>Welcome ${data.name}</p>`
     })
     .catch(error => {
         console.log("Error:",error);
@@ -116,6 +117,7 @@ function getUserPosts(){
 document.getElementById('getUserData').addEventListener('click',getUserPosts);
 
 //When search bar is empty show all posts
+const userInput=document.getElementById('userId');
 userInput.addEventListener('input',()=>{
     if(userInput.value.trim()===""){
         displayAllPosts();
