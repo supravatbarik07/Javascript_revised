@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            background: greenyellow;
+            margin:auto;
+            color:red;
+            text-align: center;
+        }
+        .active{
+          display:none;
+        }
+        .box2{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        /* .cbox1, .cbox2, .cbox3{
+            padding: auto;
+        } */
+        img{
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+        }
+        .btn{
+            display: block;
+            margin: auto;
+            margin-top: 10px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            background-color: teal;
+            color: white;
+            border: none;
+            cursor: pointer; 
+        }
+        .activeone{
+            /* visibility: visible; */
+            display: block;
+        }
+        
+    </style>
+    <script>
+       function displayFun(){
+        document.getElementById('box').classList.toggle('active');
+       }
+       function removeFun(){
+        document.getElementById('cbox1').classList.remove('cbox1');
+       }
+       function hideVisibilityFun(){
+        document.getElementById('cbox2').style.visibility='hidden';
+       }
+       function resetFun(){
+        document.getElementsByClassName('same').classList.toggle('activeone')
+       }
+    </script>
+</head>
+<body>
+    <div class="box" id="box">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit facilis praesentium, 
+            aliquam labore culpa eligendi dolor adipisci excepturi placeat id porro natus repudiandae debitis illo dignissimos illum architecto possimus maiores?
+        </p>
+    </div>
+    <button onclick="displayFun()">Click me</button>
+
+    <div class="box2" id="box2">
+        <div class="cbox1 same" id="cbox1">
+            <img src="https://cdn.pixabay.com/photo/2022/09/27/19/46/ai-generated-7483596_960_720.jpg" alt="">
+            <button class="btn" id="btn" onclick="removeFun()">Remove</button>
+        </div>
+        <div class="cbox2 same" id="cbox2">
+            <img src="https://imgv3.fotor.com/images/side/image-mirror.jpg" alt="">
+            <button class="btn" id="btn" onclick="hideVisibilityFun()">Hide</button>
+        </div>
+        <div class="cbox3 same" id="cbox3">
+           <img src="https://deep-image.ai/blog/content/images/size/w1600/2022/08/magic-g1db898374_1920.jpg" alt="">
+            <button class="btn" id="btn" onclick="resetFun()">Reset</button>
+        </div>
+    </div>
+</body>
+</html>
