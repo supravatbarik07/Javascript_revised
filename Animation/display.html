@@ -42,7 +42,9 @@
             /* visibility: visible; */
             display: block;
         }
-        
+        .cbox1{
+            display: block;
+        }
     </style>
     <script>
        function displayFun(){
@@ -55,7 +57,7 @@
         document.getElementById('cbox2').style.visibility='hidden';
        }
        function resetFun(){
-        document.getElementsByClassName('same').classList.toggle('activeone')
+        document.getElementsByClassName('same').classList.add('activeone')
        }
     </script>
 </head>
