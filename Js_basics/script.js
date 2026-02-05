@@ -14,11 +14,11 @@
 // console.log(userName);
 // display();
 
-// let x=2+3+'8' 
-// console.log(x)
+let x=2+3+'8' 
+console.log(x)
 
-// let y='6'+3+7 
-// console.log(y)
+let yy='6'+3+7 
+console.log(yy)
 
 // var h=90;
 // var h=89;
@@ -101,3 +101,15 @@ const g=55;
 }
 //Reassigning an existing const variable, 
 // in the same scope, is not allowed:
+
+
+//JS types
+
+let y=null;
+let b=Symbol()
+let t=78;
+let u=BigInt(7890);
+let e=5644552e98
+let w=true;
+t=99;
+console.log(typeof(t))
