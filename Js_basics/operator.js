@@ -94,3 +94,4 @@ console.log(min);
 let aa='45'//'A'
 let bb='34'//'U' //note: here strings are compire by there alphabetical order.
 console.log(aa<bb)
+

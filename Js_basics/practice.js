@@ -84,11 +84,50 @@ else{
 let result= num3 >0 ? 'number is Positive' : num3<0 ? 'number is negative' :'number is zero'
 console.log(result)
 
-let num4=-789;
-let num5=345;
-let num6=783;
+let num4=79;
+let num5=79;
+let num6=79;
 
 let largest= num4 >num5 ? `${num4} is a greater number` : `${num5} is greater`
 console.log(largest)
 
 //try among 3 numbers.
+
+if(num4>num5 && num4>num6){
+    console.log('num4 is greater no')
+}
+else if(num5>num6 && num5>num4){
+    console.log('num5 is greater no')
+}
+else if(num6>num4 && num6>num5){
+    console.log('num6 is greater no')
+}
+else{
+    console.log('any of numbers are same')
+}
+
+let user_name='supravat'
+// console.log(user_name.length)
+
+if(user_name.length===0){
+    console.log('The string is empty')
+}
+else{
+    console.log(`the string is not empty ${user_name}`)
+}
+
+let login_status=false;
+if(login_status){
+    console.log('You are Logged in')
+}
+else{
+    console.log('You are not logged in')
+}
+
+let num7=35;
+
+let result1= num7%7===0 && num7%5===0 ? 'this number is devisible by 5 and 7' : 'This no is not devisible by 5 and 7'
+console.log(result1)
+
+let a=0;
+console.log(a?'yes':'no')
