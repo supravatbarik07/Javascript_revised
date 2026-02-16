@@ -14,7 +14,8 @@ console.log(user);     // Output: 'supravat' (original value remains unchanged)
 console.log(userCopy); // Output: 'barik' (changed value)
 /**
  Why?
-The userCopy variable holds its own copy of the value. Modifications to userCopy do not affect the original user.
+The userCopy variable holds its own copy of the value. Modifications to userCopy do not affect the 
+original user.
  */
 
 /*2. Heap Memory
@@ -22,7 +23,8 @@ Used For: Non-primitive data types like Object, Array, and Function.
 Behavior:
 Stores a reference to the value in memory.
 When a variable is assigned to another, the reference (not the value) is copied.
-Changes through one reference affect the original value since both variables point to the same memory location.
+Changes through one reference affect the original value since both variables point to the same memory 
+location.
  */
 let user01 = {               // Stored in heap memory
     email: 'supravat@gmail.com',
