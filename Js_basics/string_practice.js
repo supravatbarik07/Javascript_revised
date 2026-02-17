@@ -105,14 +105,33 @@ console.log(text3.lastIndexOf('take',50));//Gives the index of the last 'take' i
 console.log(text3.search('take',56));
 console.log(text3.search(/take/));
 
-let text4='Its really pain if rain is raining 100% hole night today, all lands should be plain'
+let text4='Its really pain' //if rain is raining 100% hole night today, all lands should be plain'
 
 console.log(text4.match(/ain/g));
 console.log(text4.match('ain'));
 console.log(text4.match(/100%/gi));//for case sensitive
 
-console.log(text4.matchAll('ain'))
+console.log([...text4.matchAll('rain')])
+console.log(...text4.matchAll(/ain/gi));//use this way to get proper output (use spread operator)
 
+console.log(text4.includes('rain')); // it returns bollean value if finds the specified value or not 
+console.log(text4.includes('rain',27));//search starts at 27
+
+console.log(text4.startsWith('s'));//Check the sentence starts with this word or not returns boolean.
+console.log(text4.startsWith('rain',19));//search starts at 19th position
+
+console.log(text4.endsWith('pain'));//check ends with this word returns boolean.
+console.log(text4.endsWith('really',10));//here the 2nd parameter check first 10 charecter ends with the 1st parameter or not
+
+let text5='';
+for(let i=0;i<text4.length;i++){
+     text5+=text4.at(i).padStart(4,'RAM')+'\n';
+}
+console.log(text5)
+
+let text6='Js is awsome must learn it'
+let text7=text6.slice(6,12).toUpperCase();
+console.log(text7)
 
 
 
