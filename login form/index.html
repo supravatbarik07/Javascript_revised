@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="continner">
+        <div class="input_container">
+        <label for="email" class="cmt1">Please enter your email:</label>
+        <input type="text" id = "email" name="email" autocomplete="off" style="width: 100%; font-size: 1em; color: #0B2D72;">
+        <label for="password" class="cmt1">Please enter your password:</label>
+        <input type="password" id = "password" name="password" style="width: 100%; font-size: 1em; color: #0B2D72;">
+        </div>
+        <div class="gender_continer">
+        <label for="gender" style="color:#B35656; font-size: 1em;">Please enter your gender:</label>
+        <input type="radio" id="male" name="gender" value="male" autocomplete="off">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" autocomplete="off">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other" autocomplete="off">
+        <label for="other">Other</label>
+        </div>
+        <button id="btn">Submit</button>
+        <p class="error" style="color: red;"></p>
+    </div>
+    <p class="alert-box"></p>
+    <script src="script.js"></script>
+</body>
+</html>

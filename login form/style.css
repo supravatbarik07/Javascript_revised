@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+}
+
+/* make the whole page a flex container so .continner sits at center */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.continner{
+    /* width: 100%; */
+    max-width: 420px;
+    /* remove full viewport height so it only wraps content */
+    /* height: 100vh; */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f1f1f1;
+    flex-direction: column;
+    border-radius: 12px;
+}
+.cmt1{
+    font-size: 20px;
+    font-weight: 500;
+    color: #25671E;
+    margin-bottom: 10px;
+}
+.input_container{
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background: #fff;
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+}
+#btn{
+    margin-top: 30px;
+    padding: 10px 30px;
+    font-size: 1.5em;
+    font-family: 'Courier New', Courier, monospace;
+    border: none;
+    border-radius: 10px;
+    background-color: rebeccapurple;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+#btn:hover{
+        background-color: indigo;
+}
+.input_container input{
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background: #f7f8fa;
+}
+.alert-box {
+    position: fixed;      /* Stick to screen */
+    top: 20px;            /* Distance from top */
+    right: 20px;          /* Distance from right */
+    padding: 12px 16px;
+    border-radius: 8px;
+    background: #237227;
+    color: #F7F8F0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    display: none;        /* Hidden by default */
+    z-index: 1000;
+    transition: right 0.4s ease;
+}
