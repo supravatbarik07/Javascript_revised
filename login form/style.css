@@ -76,3 +76,24 @@ body {
     z-index: 1000;
     transition: right 0.4s ease;
 }
+.captcha-code{
+    display: block;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background: #3a5792;
+    color: #ccc;
+    font-size: 1.2em;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.bx-refresh{
+    /* position: absolute;
+    right: 10px;
+    top: 50%; */
+    /* transform: translateY(-50%); */
+    cursor: pointer;
+    font-size: 1.2em;
+    color: #3a5792;
+}

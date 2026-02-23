@@ -14,7 +14,7 @@
         <label for="password" class="cmt1">Please enter your password:</label>
         <input type="password" id = "password" name="password" style="width: 100%; font-size: 1em; color: #0B2D72;">
         </div>
-        <div class="gender_continer">
+        <!-- <div class="gender_continer">
         <label for="gender" style="color:#B35656; font-size: 1em;">Please enter your gender:</label>
         <input type="radio" id="male" name="gender" value="male" autocomplete="off">
         <label for="male">Male</label>
@@ -22,6 +22,19 @@
         <label for="female">Female</label>
         <input type="radio" id="other" name="gender" value="other" autocomplete="off">
         <label for="other">Other</label>
+        </div> -->
+        <div class="captcha-field">
+            <label for="captcha" class="cmt1">Please enter the captcha:</label>
+            <div class="captcha-container">
+                <span id="captcha-code" class="captcha-code"></span>
+                <span id="refresh">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrow-clockwise bx-refresh" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2z"/>
+  <path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466"/>
+</svg>
+                </span>
+              <input type="text" id="captcha" name="captcha" autocomplete="off" style="width: 100%; font-size: 1em; color: #0B2D72;">
+            </div>
         </div>
         <button id="btn">Submit</button>
         <p class="error" style="color: red;"></p>
