@@ -77,3 +77,12 @@ console.log('B',arr1); //original array remain same.
  * Splice: Modify (add/remove/replace elements).
    Slice: Extract a portion (without modification).
  */
+
+   //for...of loop with array
+   //syntax: for(variable of iterable){ //code to be executed }
+
+   let arr=['ram','shyam','hari','gopal']
+   
+   for(let value of arr){
+    console.log(value);
+   }

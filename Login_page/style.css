@@ -1,0 +1,251 @@
+:root{
+    --bg:rgb(115, 76, 145);
+    --navbg:yellow;
+}
+*{
+    box-sizing: border-box;
+}
+html body{
+    height: 100%;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: var(--bg);
+    margin: 0;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 9px;
+    background: var(--navbg);
+    position: sticky;
+    color: var(--bg);
+}
+nav h2{
+    cursor: pointer;
+}
+nav ul{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    /* padding: 10px; */
+    color: var(--bg);
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--bg);
+    cursor: pointer;
+}
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 20px; */
+    color: var(--navbg);
+}
+.user_inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 400px;
+}
+.user_inputs input{
+    width: 100%;
+    padding: 8px 12px;
+    border:1px solid #ccc;
+    outline: none;
+    font-size: 0.8em;
+    border-radius: 6px;
+    /* transition: border-color 0.3s, box-shadow 0.3s; */
+}
+.user_inputs label{
+    font-size: 1em;
+    font-weight: 800;
+}
+.radio_btn{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+}*{
+    box-sizing: border-box;
+}
+
+/* make the whole page a flex container so .continner sits at center */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav{
+    position: fixed;
+    top: 0%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20%;
+    width: 100%;
+    background: #237227;
+    align-items: center;
+}
+li a{
+    text-decoration: none;
+    color: white;
+    transition: all 0.4s ease;
+}
+li a:hover{
+    color: yellow;
+}
+.continner{
+    /* width: 100%; */
+    max-width: 420px;
+    /* remove full viewport height so it only wraps content */
+    /* height: 100vh; */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f1f1f1;
+    flex-direction: column;
+    border-radius: 12px;
+    margin-top: 80px;
+}
+#login-section{
+    display: none;
+}
+#home-section, #login-section{
+    transition: all 0.5s ease; 
+}
+.cmt1{
+    font-size: 20px;
+    font-weight: 500;
+    color: #25671E;
+    margin-bottom: 10px;
+}
+.input_container{
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background: #fff;
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+}
+#btn{
+    margin-top: 30px;
+    padding: 10px 30px;
+    font-size: 1.5em;
+    font-family: 'Courier New', Courier, monospace;
+    border: none;
+    border-radius: 10px;
+    background-color: rebeccapurple;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+#btn:hover{
+    background-color: indigo;
+}
+input{
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background: #f7f8fa;
+}
+.success-alert-box {
+    position: fixed;      /* Stick to screen */
+    top: 80px;            /* Distance from top */
+    right: 20px;          /* Distance from right */
+    padding: 12px 20px;
+    border-radius: 8px;
+    background: #237227;
+    color: #F7F8F0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    display: none;        /* Hidden by default */
+    z-index: 1000;
+    transition: right 0.4s ease;
+}
+.error-alert-box {
+    position: fixed;      /* Stick to screen */
+    top: 80px;            /* Distance from top */
+    right: 20px;          /* Distance from right */
+    padding: 12px 20px;
+    border-radius: 8px;
+    background: #ff4d4d;
+    color: #fff2f2;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    display: none;        /* Hidden by default */
+    z-index: 1000;
+    transition: right 0.4s ease;
+}
+.captcha-code{
+    display: block;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background: #3a5792;
+    color: #ccc;
+    font-size: 1.2em;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+.bx-refresh{
+    /* position: absolute;
+    right: 10px;
+    top: 50%; */
+    /* transform: translateY(-50%); */
+    cursor: pointer;
+    font-size: 1.2em;
+    color: #3a5792;
+}
+.input-container1{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 5px;
+    margin-top: 100px;
+}
+.input-error {
+    border: 2px solid #ff4d4d !important;
+    background-color: #fff2f2;
+    outline: none;
+}
+.register-section{
+        display: none;
+}
+.welcome-user{
+    text-align: center;
+    color: rgb(4, 0, 255);
+}
+.check_box{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.btn{
+    padding: 10px 65px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: red;
+    color: white;
+    margin: 10px;
+}
+.btn:hover{
+    transform: scale(1.05);
+    background-color: pink;
+}

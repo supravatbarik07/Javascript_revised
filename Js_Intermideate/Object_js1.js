@@ -35,7 +35,7 @@ const cryptoApp={
 
 // console.log(cryptoApp.Meme_coin?.Doge_catagory.Doge);
 /*
-'?'->Optional chaining is particularly useful when working with data where some 
+'?.'->Optional chaining is particularly useful when working with data where some 
 properties might not always be defined, avoiding runtime errors.
  */
 

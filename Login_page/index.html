@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="header">
+        <h1 class="logo" style="color: rgb(200, 220, 189); margin-left: 8px; cursor: pointer;" >Quiz Buzz</h1>
+        <ul style="display: flex; gap: 8%; margin-right: 30px; align-items: center; cursor: pointer; list-style: none; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+            <li><a href="#" id="home-page">Home</a></li>
+            <li><a href="#" id="register-page">Register</a></li>
+            <li><a href="#" id="login-page">Login</a></li>
+            <li><a href="#" id="logout-page">Logout</a></li>
+        </ul>
+    </nav>
+    <!-- HOME Section-->
+    <div id="home-section">
+        <h1 class="welcome-user"></h1>
+        <h1>Welcome to Quiz world!</h1>
+    </div>
+    <!-- Login form -->
+
+    <div id="login-section">
+        <div class="continner">
+        <form action="">
+            <div class="input_container">
+        <label for="email" class="cmt1">Please enter your email:</label>
+        <input type="text" id = "email" name="email" autocomplete="off" style="width: 100%; font-size: 1em; color: #0B2D72;">
+        <label for="password" class="cmt1">Please enter your password:</label>
+        <input type="password" id = "password" name="password" style="width: 100%; font-size: 1em; color: #0B2D72;">
+        </div>
+        <div class="captcha-field">
+            <label for="captcha" class="cmt1">Please enter the captcha:</label>
+            <div class="captcha-container">
+                <span id="login-captcha-code" class="captcha-code"></span>
+                <span class="refresh">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrow-clockwise bx-refresh" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2z"/>
+  <path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466"/>
+</svg>
+                </span>
+              <input type="number" id="login-captcha-input" name="captcha" autocomplete="off" style="width: 100%; font-size: 1em; color: #0B2D72; ">
+            </div>
+        </div>
+        <button type="submit" id="btn">Submit</button>
+        </form>
+        <p class="error" style="color: red;"></p>
+    </div>
+    </div>
+    <p class="success-alert-box"></p>
+    <p class="error-alert-box"></p>
+
+    <!-- Registration form -->
+    <div class="register-section">
+        <div class="register-container">
+            <form action="" id="registration-form">
+               <div class="input-container1">
+                <label for="fname" class="sfname">Enter Your First Name: <strong style="color: red;">*</strong></label>
+                <input type="text" name="fname" id="fname" autocomplete="off">
+                
+                <label for="lname" class="slname">Enter Your Last Name: <strong style="color: red;">*</strong></label>
+                <input type="text" name="lname" id="lname" autocomplete="off">
+                
+                <label for="remail" class="semail">Enter Email: <strong style="color: red;">*</strong></label>
+                <input type="email" id="remail" name="remail" autocomplete="off">
+                
+                <label for="spassword" class="spassword">Enter a strong password: <strong style="color: red;">*</strong></label>
+                <input type="password" name="spassword" id="spassword" autocomplete="off">
+                
+                <label for="repassword" class="repassword">Re enter Your Password: <strong style="color: red;">*</strong></label>
+                <input type="password" name="repassword" id="repassword" autocomplete="off">
+                
+                <label for="userid" class="userid">Enter an userId: <strong style="color: red;">*</strong></label>
+                <input type="text" name="userid" id="userid" autocomplete="off">
+               </div>
+        <div class="gender_continer">
+        <label for="gender" style="color:#B35656; font-size: 1em;">Please enter your gender:<strong style="color: red;">*</strong></label>
+        <input type="radio" id="male" name="gender" value="male" autocomplete="off">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" autocomplete="off">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other" autocomplete="off">
+        <label for="other">Other</label>
+        </div>
+        <div class="captcha-field">
+            <label for="captcha" class="cmt1">Please enter the captcha:</label>
+            <div class="captcha-container">
+                <span id="reg-captcha-code" class="captcha-code"></span>
+                <span class="refresh">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrow-clockwise bx-refresh" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2z"/>
+      <path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466"/>
+      </svg>
+                </span>
+              <input type="number" id="reg-captcha-input" name="captcha" autocomplete="off" style="width: 100%; font-size: 1em; color: #0B2D72; ">
+            </div>
+        </div>
+        <button type="submit" id="btn">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
