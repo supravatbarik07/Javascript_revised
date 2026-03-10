@@ -7,6 +7,7 @@ let homePage=document.getElementById('home-section')
 let loginPage=document.getElementById('login-section')
 let regiForm=document.getElementById('registration-form')
 let welcomeMsg=document.querySelector('.welcome-user')
+let userNameLogo=document.getElementById('user-logo');
 
 let isLoggedIn = false;
 let login_captcha_code='';
@@ -159,7 +160,12 @@ function homePageDisplay(){
     homePage.style.display='block';
     loginPage.style.display='none';
     document.querySelector(`.register-section`).style.display='none';
-    welcomeMsg.style.display='block';
+    if(!isLoggedIn){
+         welcomeMsg.style.display='none';
+    }
+    else{
+        welcomeMsg.style.display='block';
+    }
 }
 document.getElementById('home-page').addEventListener('click',(e)=>{
     e.preventDefault();
@@ -181,7 +187,6 @@ document.getElementById('login-page').addEventListener('click',(e)=>{
 
 document.getElementById('logout-page').addEventListener('click',(e)=>{
     e.preventDefault();
-
     isLoggedIn=false;
     updateNavBar()
     loginPageDisplay();
@@ -192,16 +197,19 @@ function updateNavBar(){
     let loginBtn = document.getElementById('login-page');
     let logoutBtn = document.getElementById('logout-page');
     let regbtn = document.getElementById('register-page');
+    let userLogo=document.getElementById('user-logo');
     
     if(isLoggedIn){
         loginBtn.style.display='none';
         regbtn.style.display='none';
         logoutBtn.style.display= 'block';
+        userLogo.style.display= 'block'
     }
     else{
         loginBtn.style.display='block';
         regbtn.style.display='block';
         logoutBtn.style.display= 'none';
+        userLogo.style.display= 'none'
         
     }
 }
@@ -211,6 +219,7 @@ updateNavBar();
 function welcomeMessage(){
     users.forEach(getUserDetails =>{
     welcomeMsg.textContent=`${getUserDetails.first_name}`
+    userNameLogo.textContent=`${getUserDetails.first_name}`
 })
 }
 
@@ -316,4 +325,3 @@ function registrationComplete(){
 }
 registrationComplete();
 homePageDisplay();
-

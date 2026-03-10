@@ -10,7 +10,7 @@ html body{
 }
 body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background: var(--bg);
+    /* background: var(--bg); */
     margin: 0;
 }
 nav{
